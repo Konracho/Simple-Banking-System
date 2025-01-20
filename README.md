@@ -1,1 +1,1 @@
-# Simple-Banking-System
+# Simple-Banking-System. DB with SQlite.
