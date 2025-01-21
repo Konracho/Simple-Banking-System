@@ -216,7 +216,7 @@ def main():
 
 main()
 
-def print_BD():
+def print_DB():
     conn = connect_to_tadabase()
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM card ORDER BY id")
@@ -224,13 +224,13 @@ def print_BD():
     for i in resalt:
         print(i)
 
-# print_BD()
+# print_DB()
 
-def del_from_BD():
+def del_all_from_DB():
     conn = connect_to_tadabase()
     cursor = conn.cursor()
     cursor.execute("DELETE FROM card")
     conn.commit()
     conn.close()
 #
-# del_from_BD()
+# del_all_from_DB()
